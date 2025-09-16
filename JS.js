@@ -35,7 +35,7 @@ form.addEventListener('submit', (e) => {
   const recommended_calories = tdee + daily_calorie_change;
 
   let note = '';
-  if(recommended_calories < 1200) note = 'Calories too low to be safe';
+  if(recommended_calories < 1200) note = 'MREG AL9LAWI';
   else if(recommended_calories > 4000) note = 'Calories too high to be safe';
   else note = 'Plan looks reasonable';
 
@@ -56,3 +56,4 @@ back.addEventListener('click', () => {
   result.hidden = true;
   form.reset();
 });
+
